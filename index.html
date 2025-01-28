@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Valentine's Day!</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background-color: #ffe6e6;
+      padding: 50px;
+    }
+    h1 {
+      color: #e60073;
+    }
+    button {
+      background-color: #ff6699;
+      color: white;
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e60073;
+    }
+    #message {
+      margin-top: 20px;
+      font-size: 24px;
+      color: #333;
+      display: none;
+    }
+    #extra-message {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #666;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Valentine's Day ❤️</h1>
+  <p>Click the button for a special message.</p>
+  <button onclick="revealMessage()">Click Me</button>
+
+  <div id="message">Will you be my Valentine? 💖</div>
+  <div id="extra-message">But my schedule is hectic, so I'm giving this in advance! 🎁</div>
+
+  <script>
+    function revealMessage() {
+      document.getElementById("message").style.display = "block";
+      document.getElementById("extra-message").style.display = "block";
+    }
+  </script>
+</body>
+</html>
